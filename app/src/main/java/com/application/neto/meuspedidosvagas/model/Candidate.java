@@ -108,15 +108,15 @@ public class Candidate {
         boolean generico = true;
         if(html > 6 && css > 6 && javaScript > 6) {
             retorno.add("Front-End");
-            generico = true;
+            generico = false;
         }
         if(python > 6 && django > 6) {
             retorno.add("Back-End");
-            generico = true;
+            generico = false;
         }
         if(ios > 6 && android > 6) {
             retorno.add("Mobile");
-            generico = true;
+            generico = false;
         }
         if(generico){
             retorno.add("programador");

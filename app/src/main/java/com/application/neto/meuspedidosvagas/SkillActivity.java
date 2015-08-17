@@ -188,8 +188,9 @@ public class SkillActivity extends AppCompatActivity {
         candidate.setCss(Integer.parseInt(valor_css.getText().toString()));
 
         StringBuilder body = new StringBuilder();
-        body.append(" Obrigado por se candidatar, assim que tivermos uma vaga disponível para ");
+
         for (String str : candidate.analyzeProfile()) {
+            body.append(" Obrigado por se candidatar, assim que tivermos uma vaga disponível para ");
             body.append(str);
             body.append(" entraremos em contato.");
 
@@ -208,6 +209,7 @@ public class SkillActivity extends AppCompatActivity {
                             Toast.LENGTH_LONG).show();
                 }
             });
+            body.setLength(0);
         }
         finish();
     }
