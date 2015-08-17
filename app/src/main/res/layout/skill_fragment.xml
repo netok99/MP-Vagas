@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_main"
+        android:title="@string/title_toolbar"
+        android:subtitle="@string/title_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:titleTextAppearance="@color/white"
+        android:fontFamily="Roboto"
+        android:elevation="4dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/intro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msg_skill"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/text_html"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/html"
+            android:layout_below="@+id/intro">
+        </TextView>
+
+        <TextView
+            android:id="@+id/valor_html"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/text_html"
+            android:layout_toRightOf="@+id/text_html">
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/html"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:layout_below="@+id/text_html"
+            android:layout_marginBottom="6dp">
+        </SeekBar>
+        <!-- android:layout_alignParentLeft="true"-->
+
+        <TextView
+            android:id="@+id/text_css"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/css"
+            android:layout_below="@+id/html">
+        </TextView>
+
+        <TextView
+            android:id="@+id/valor_css"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/text_css"
+            android:layout_toRightOf="@+id/text_css">
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/css"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:layout_below="@+id/text_css"
+            android:layout_marginBottom="6dp" >
+        </SeekBar>
+
+        <TextView
+            android:id="@+id/text_javascript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/javascript"
+            android:layout_below="@+id/css" >
+        </TextView>
+
+        <!-- android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"-->
+
+        <TextView
+            android:id="@+id/valor_javascript"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/text_javascript"
+            android:layout_toRightOf="@+id/text_javascript" >
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/javascript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:layout_below="@+id/text_javascript"
+            android:layout_marginBottom="6dp" >
+        </SeekBar>
+
+        <TextView
+            android:id="@+id/text_python"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/python"
+            android:layout_below="@+id/javascript" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/valor_python"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/text_python"
+            android:layout_toRightOf="@+id/text_python" >
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/python"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:layout_below="@+id/valor_python"
+            android:layout_marginBottom="6dp" >
+        </SeekBar>
+
+        <TextView
+            android:id="@+id/text_django"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/django"
+            android:layout_below="@+id/python">>
+        </TextView>
+
+        <TextView
+            android:id="@+id/valor_django"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/text_django"
+            android:layout_toRightOf="@+id/text_django" >
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/django"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:layout_below="@+id/valor_django"
+            android:layout_marginBottom="6dp" >
+        </SeekBar>
+
+        <TextView
+            android:id="@+id/text_ios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ios"
+            android:layout_below="@+id/django" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/valor_ios"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/text_ios"
+            android:layout_toRightOf="@+id/text_ios" >
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/ios"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:layout_below="@+id/text_ios"
+            android:layout_marginBottom="6dp" >
+        </SeekBar>
+
+
+        <TextView
+            android:id="@+id/text_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/android"
+            android:layout_below="@+id/ios">
+        </TextView>
+
+        <TextView
+            android:id="@+id/valor_android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/text_android"
+            android:layout_toRightOf="@+id/text_android">
+        </TextView>
+
+        <SeekBar
+            android:id="@+id/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:layout_below="@+id/text_android"
+            android:layout_marginBottom="6dp" >
+        </SeekBar>
+
+        <Button android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_salvar"
+            android:id="@+id/save"
+            android:layout_below="@+id/android"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
